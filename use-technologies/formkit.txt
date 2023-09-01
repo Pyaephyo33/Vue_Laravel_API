@@ -1,0 +1,15 @@
+<template>
+<FormKit type = "form"
+         @submit = "submitForm">
+        <FormKit label="Name" name="name" type="text" />
+</FormKit>
+</template>
+<script setup>
+const submitForm = (formData) => {
+    console.log(formData)
+    // output {name: 'something ...'}
+}
+</script>
+
+- launch @submitForm into FormKit
+- Call JS From Event
